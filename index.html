@@ -7,31 +7,46 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e89020bcc.js" crossorigin="anonymous"></script>
+    <style>
+     @import "tailwindcss";
+      .primary-font{
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        }
+     </style>
 </head>
-<body>
+<body class="primary-font">
     <!-- header section -->
     <header class="container mx-auto">
-        <nav class="flex justify-between h-[109px] items-center">
+        <nav class="flex m-4 lg:flex justify-between h-[109px] items-center">
             <!-- logo part-->
             <div>
                 <img src="c2-assets/logo-header.png" alt="">
             </div>
             <!--Nav Item-list-->
             <div>
-                <ul class="flex gap-6">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact us</a></li>
+                <ul class="hidden lg:flex gap-6 ">
+                    <li><a href="#" class="text-5 font-normal">Product</a></li>
+                    <li><a href="#" class="text-5 font-normal">Services</a></li>
+                    <li><a href="#" class="text-5 font-normal">Contact us</a></li>
                 </ul>
             </div>
             <!--search,cart,log and signup -->
-            <div class="flex gap-6">
+            <div class="hidden lg:flex gap-6 items-center">
                  <img class="w-6 h-6" src="c2-assets/icons8-search-50.png" alt="">
                  <img class="w-6 h-6" src="c2-assets/shopping-cart.png" alt="">
-                <button>Login</button>
-                <button>Register</button>
+                <button class="text-5 font-normal px-7 py-2 border border-green-600 rounded-lg"> Login</button>
+                <button  class="text-5 font-normal px-7 py-2 bg-green-600 rounded-lg text-white"> Register</button>
             </div>
-
+            <!--Small devices Nav bar-->
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars text-4xl text-green-700"></i>
+            </div>
+            
         </nav>
     </header>
     <!-- Main section -->
