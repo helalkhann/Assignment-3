@@ -35,23 +35,48 @@
                 </div>
                 <!--Nav Item-list-->
                 <div>
-                    <ul class="hidden lg:flex gap-6 ">
-                        <li><a href="#" class="text-xl font-normal hover:text-green-800">Product</a></li>
-                        <li><a href="#" class="text-xl font-normal hover:text-green-800">Services</a></li>
-                        <li><a href="#" class="text-xl font-normal hover:text-green-800">Contact us</a></li>
+                    <ul class="hidden lg:flex gap-8 ">
+                        <li><a href="#" class="text-xl font-normal hover:text-green-600">Product</a></li>
+                        <li><a href="#" class="text-xl font-normal hover:text-green-600">Services</a></li>
+                        <li><a href="#" class="text-xl font-normal hover:text-green-600">Contact us</a></li>
                     </ul>
                 </div>
                 <!--search,cart,log and signup -->
                 <div class="hidden lg:flex gap-6 items-center">
                     <img class="w-6 h-6" src="c2-assets/icons8-search-50.png" alt="">
                     <img class="w-6 h-6" src="c2-assets/shopping-cart.png" alt="">
-                    <button class="text-5 font-normal px-7 py-2 border border-green-600 rounded-lg"> Login</button>
+                    <button class="text-5 font-normal px-7 py-2 border border-green-600 rounded-lg hover:bg-green-600 hover:text-white"> Login</button>
                     <button  class="text-5 font-normal px-7 py-2 bg-green-600 rounded-lg text-white"> Register</button>
                 </div>
                 <!--Small devices Nav bar-->
                 <div class="block lg:hidden">
-                    <i class="fa-solid fa-bars text-4xl text-green-700"></i>
+                    <label class="btn btn-circle swap swap-rotate">
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" />
+                    </label>
+                        <!-- hamburger icon -->
+                        <svg
+                          class="swap-off bg-green-600 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 512 512">
+                          <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                        </svg>
+                      
+                        <!-- close icon -->
+                        <svg
+                          class="swap-on green text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 512 512">
+                          <polygon
+                            points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                        </svg>
+                      </label>
                 </div>
+                
                 
             </nav>
          </div>
@@ -125,7 +150,7 @@
             <div class="container mx-auto px-4">
             <!--Product section header-->
                 <div class="mb-12">
-                    <h2 class="text-4xl text-green-600 font-bold">Services</h2>
+                    <h2 class="text-4xl text-green-600 font-bold">Popular Products</h2>
                 </div>
                 <div class="gap-3 lg:flex gap-6 w-4/4">
                     <!--product-left-part-->
@@ -133,7 +158,7 @@
                         <div>
                             <h1 class="text-3xl text-white font-bold">30% off</h1>
                             <p class="my-5 text-[#111111] text-xl">Discover a word of treats,toys and <br> essentials handpicked for</p>
-                            <button class="bg-white py-3 px-8 font-bold rounded-lg">Buy Now</button>
+                            <button class="bg-white py-3 px-8 font-bold rounded-lg hover:bg-green-700 hover:text-white">Buy Now</button>
                         </div>
                         <div class="relative ">
                             <img class="absolute -top-20 -right-4" src="c2-assets/vegetable-offer.png" alt="">
@@ -159,7 +184,7 @@
                         <!--product-right-part cart-1-->
                         <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
                             <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png"class="w-full h-full" alt="">
+                                <img class="p-2" src="c2-assets/potato.png"class="w-full h-full" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2">
@@ -173,21 +198,7 @@
                         <!--product-right-part cart-1-->
                         <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
                             <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png"class="w-full h-full" alt="">
-                            </div>
-                            <div>
-                                <div class="flex gap-2">
-                                  <i class="fa-solid fa-star text-[#FFC107]"></i>
-                                  <p class="text-base font-400">4.5</p>
-                                </div>
-                                <h3 class="text-xl font-500">Onion 1KG</h3>
-                                <P class="text-xl font-500">$39.99</P>
-                            </div>
-                        </div>
-                        <!--product-right-part cart-1-->
-                        <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
-                            <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png" alt="">
+                                <img class="p-2" src="c2-assets/tomato.png"class="w-full h-full" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2">
@@ -215,7 +226,21 @@
                         <!--product-right-part cart-1-->
                         <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
                             <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png" alt="">
+                                <img class="p-2" src="c2-assets/potato.png"class="w-full h-full" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-2">
+                                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                  <p class="text-base font-400">4.5</p>
+                                </div>
+                                <h3 class="text-xl font-500">Onion 1KG</h3>
+                                <P class="text-xl font-500">$39.99</P>
+                            </div>
+                        </div>
+                        <!--product-right-part cart-1-->
+                        <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
+                            <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
+                                <img class="p-2" src="c2-assets/tomato.png"class="w-full h-full" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2">
@@ -243,7 +268,7 @@
                         <!--product-right-part cart-1-->
                         <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
                             <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png" alt="">
+                                <img class="p-2" src="c2-assets/potato.png"class="w-full h-full" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2">
@@ -257,7 +282,7 @@
                         <!--product-right-part cart-1-->
                         <div class="flex items-center  bg-white rounded-xl py-4 pl-4 pr-10 gap-4 w-full h-[118px]">
                             <div class="w-[86px] h-[86px] bg-[#EFEBE3]  rounded-lg">
-                                <img class="p-2" src="c2-assets/onion.png" alt="">
+                                <img class="p-2" src="c2-assets/tomato.png"class="w-full h-full" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2">
@@ -285,7 +310,7 @@
                 <div class="h-[344px] flex justify-between mb-4 lg:w-3/5 bg-[#115414] p-10 rounded-2xl">
                     <div class="mr-4">
                         <img src="c2-assets/dawat-logo.png" alt="">
-                        <button class=" py-3 px-5 text-base rounded-xl lg:py-4 px-10 bg-[#63B76D] lg:text-2xl font-400 text-white mt-7 mb-6 rounded-xl">Cook Exotic Dishes</button>
+                        <button class=" py-3 px-5 text-base rounded-xl lg:py-4 px-10 bg-[#63B76D] lg:text-2xl font-400 text-white mt-7 mb-6 rounded-xl hover:bg-green-700">Cook Exotic Dishes</button>
                         <h1 class="text-2xl lg:text-[40px] text-white">UP to <span class="font-bold"> 20% OFF</span></h1>
                     </div>
                     <div class="flex justify-center items-center">
@@ -296,7 +321,7 @@
                 <div class="h-[344px] flex justify-between lg:w-2/5 bg-[#102861] p-10 rounded-2xl">
                     <div class="mr-4">
                         <img src="c2-assets/india-gate-logo.png"alt="">
-                        <button class=" py-3 px-5 text-base rounded-xl lg:py-4 px-6 bg-[#2A4D97] lg:text-2xl font-400 text-white mt-6 mb-4 rounded-xl">Cook Exotic Dishes</button>
+                        <button class=" py-3 px-5 text-base rounded-xl lg:py-4 px-6 bg-[#2A4D97] lg:text-2xl font-400 text-white mt-6 mb-4 rounded-xl hover:bg-green-700">Cook Exotic Dishes</button>
                         <h1 class="text-2xl lg:text-[40px] text-white">UP to <span class="font-bold"> 20% OFF</span></h1>
                     </div>
                     <div class="flex justify-center items-center">
@@ -319,7 +344,7 @@
                             <input class="focus:outline-none p-4" type="text" placeholder="Enter email">
 
                         </div>
-                        <button  class="text-5 font-normal px-8 py-3 bg-green-600 rounded-lg text-white"> Subscribe</button>
+                        <button  class="text-5 font-normal px-8 py-3 bg-green-600 rounded-lg text-white hover:bg-green-900 "> Subscribe</button>
                     </div>
                 </div>
             </div>
